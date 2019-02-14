@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace SoraTech.Pages
 {
-    public class PrivacyModel : PageModel
+    public class EssaysModel : PageModel
     {
         public void OnGet()
         {
