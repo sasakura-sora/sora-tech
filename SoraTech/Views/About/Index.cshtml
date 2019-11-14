@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>About This Site</h2>
+
+<p>This is a F# .Net Core site running on CentOS behind nginx</p>
+
+<p>The code is available <a href="https://github.com/sasakura-sora/sora-tech">on my GitHub</a></p>
+
+<p>
+    With .Net Core about to hit version 3 everything has been very straightforward to get running.  Installing .Net Core on CentOS worked first time following the
+    documentation from Microsoft along with setting up nginx as normal.  The only catch was discovering CentOS's default policies on the Digital Ocean provided image
+    which include disabling network access for httpd.  A short amount of searching found <a href="https://stackoverflow.com/questions/23948527/13-permission-denied-while-connecting-to-upstreamnginx">this question and answer</a>
+    and everything fell into place.
+</p>
+<p>
+    This site has been re-written to use F# with ASP.NET MVC.  Unfortunately this still requires the use of C# when creating Razor Views as there is no support for F#
+    but all other parts of the ASP.NET framework are accessible from F#.
+</p>
+<p>
+    I'm using Let's Encrypt to provide https which was almost done in a single step.  My registrar provides naked domain to www redirection which resulted in the default
+    naked cert being invalid.  A quick manual DNS entry and re-issue of the cert solved that and worked flawlessly.
+</p>
