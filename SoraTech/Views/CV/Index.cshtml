@@ -2,38 +2,72 @@
     ViewData["Title"] = "CV";
 }
 <div>
-    <h1>Ciaran Robertson</h1>
+    <h1>Ciaran Robertson, BEng</h1>
     <hr />
-
-    <h2>Skills</h2>
-    <p>
-        Senior freelance developer with over 10 years experience with C# + .NET and strong communication and teamwork skills.  I have delivered projects following the Agile manifesto and TDD to build systems using SOA, Microservice and Monolith designs on Cloud platforms including AWS and Azure as well as Self-Hosted systems.
-    </p>
-    <h2>Tech</h2>
-    <p>
-        C# and .Net Framework & .Net Core; T-SQL, Dapper and ORMs, REST WebAPI TDD & NUnit, CI with TeamCity and NuGet
-    </p>
-    <h2>Experience</h2>
-    <div>
-        <b>Augustus Martin, London</b> - Senior Developer (Contract)<br />
-        April 2019 - October 2019, 3 Months - Extended
+    <div class="cv-section">
         <p>
-            Augustus Martin is a large print firm that has created its own bespoke POS Management tool called FUZE.
+            Over a decade of experience working in C#; .NET with React; Angular and JavaScript with strong communication and teamwork skills.  I have delivered projects using SOA, Microservices and Monoliths on AWS, Azure and Self-Hosted.
+        </p>
+        <b>Recommendations</b>
+        <p>
+            “Ciaran has an amazing ability to pick up both product knowledge and architectural understanding quickly, and then apply his practical experiences to deliver effective solutions.” - <i>Ellis Smith, Lead Software Developer at Augustus Martin Ltd</i>
+        </p>
+    </div>
+    <div class="cv-section">
+        <b>Tech</b>
+        <p>
+            C# and .Net Framework & .Net Core; T-SQL, Dapper and ORMs, REST WebAPI TDD & NUnit, CI with TeamCity and NuGet
+        </p>
+        <p>
+            JS, CSS &amp; HTML; React; Angular; Responsive mobile first design; Node &amp; NPM
+        </p>
+    </div>
+    <h2>Experience</h2>
+    <div class="cv-section">
+        <i><span class="heavy">Sora-Tech, London</span> - Contract Developer</i><br />
+        <p>
+            <b>C#; React; TypeScript, Azure</b> - <a href="https://github.com/sora-tech">github.com/sora-tech</a>
+        </p>
+        <ul>
+            <li>
+                I built a TIS-100 emulator in C# to learn how to create a compiler and emulator from scratch. <a href="https://github.com/sora-tech/TIS-100">Full code available on github.</a>
+            </li>
+            <li>Creating a F# course for C# developers that teaches the benefits of functional programming.</li>
+            <li>
+                Expanded my React and Typescript skills by developing interactive games.
+            </li>
+        </ul>
+        <p>
+            I have been expanding my skills by taking on challenging projects that have pushed my knowledge of development.  Focusing on areas outside of typical LOB applications such as language development; real-time interaction and low level networking.
+        </p>
+    </div>
+    <div class="cv-section">
+        <i><span class="heavy">Augustus Martin, London</span> - Senior Developer (Contract)</i><br />
+        April 2019 - April 2020, 3 Months - Extended twice
+        <p>
+            <b>C# .NET/Core; TypeScript; Angular; React; Entity Framework; Azure; SQL</b>
         </p>
         <ul>
             <li>I was brought in to in-house their new POS System after 2 years of external development.</li>
-            <li>Introduced Clean Code/Onion Architecture to replace significant business logic in controllers and remove code duplication that caused bugs</li>
-            <li>I Added caching to poorly built custom security to reduce page loads by 20 seconds</li>
-            <li>Replaced poorly designed EF with a much smaller Dapper DAL which improved performance and removed bugs</li>
+            <li>Introduced Clean Code/Onion Architecture to replace significant business logic in controllers and remove code duplication that caused bugs.</li>
+            <li>I reduced page loads by 20 seconds with caching to work around limitations in the custom security layer.</li>
+            <li>
+                Architected and implemented using TDD greenfield components with denormalized data and a REST API to power an Angular frontend.
+            </li>
+            <li>
+                Improved performance and removed bugs by replacing a legacy Entity Framework model with a much smaller Dapper based DAL.
+            </li>
         </ul>
         <p>
-            Key Tech:<br />
-            Azure, ASP MVC, C#, JS, React, Entity Framework, TeamCity
+            I set up an Agile workflow with daily standups and code reviews for the new team.  The codebase was in poor condition, with no clear architecture, creating bugs and slowing development.  I led the refactoring to an Onion Architecture which identified areas areas most in need of development.  This significantly improved project velocity while ensuring the safe refactoring of business critical logic.
         </p>
     </div>
-    <div>
-        <b>Dazed Media, London</b> - Lead Developer <br />
+    <div class="cv-section">
+        <i><span class="heavy">Dazed Media, London</span> - Lead Developer</i> <br />
         July 2018 - November 2018
+        <p>
+            <b>Azure, ASP MVC, C#, JS, NHibernate & Azure SQL, Ninject, TeamCity</b>
+        </p>
         <p>
             Dazed Media is the online presence of Dazed group with 3 major properties <a href="https://www.dazeddigital.com">Dazed</a>, <a href="https://www.anothermag.com">Another</a> and <a href="https://www.anothermanmag.com">AnotherMan</a>.
         </p>
@@ -44,13 +78,15 @@
             <li>I worked with the owner and my manager to identify risks and create a roadmap to create a team that can support the goals of the business.</li>
         </ul>
         <p>
-            Key Tech:<br />
-            Azure, ASP MVC, C#, JS, NHibernate & Azure SQL, Ninject, TeamCity
+            Taking over the lead role with a single day handover I launched a new micro-site for Dazed on a platform that did not yet support it.  I worked closely with front-end developers and freelance 3d graphics artists to integrate their content.  This required learning the design and architecture of the CMS quickly to extend it and involved setting expectations of the internal customers who had not been stakeholders in the development.  The project was launched on time and without any issues despite the short timeline and constraints.
         </p>
     </div>
-    <div>
-        <b>Gaydar (CPC Connect), London</b> - Senior Developer <br />
+    <div class="cv-section">
+        <i><span class="heavy">Gaydar (CPC Connect), London</span> - Senior Developer</i><br />
         March 2016 - June 2018
+        <p>
+            <b>AWS, ASP MVC, C#, JS, Dapper &amp; MS-SQL, StructureMap, TeamCity, Stripe &amp; Apple Pay</b>
+        </p>
         <p>
             <a href="https://www.gaydar.net">Gaydar</a> is the oldest dating and social site for gay men with Web, Android and iOS support.
         </p>
@@ -61,13 +97,15 @@
             <li>I integrated a vue.js real-time chat platform with MongoDB backend to allow users to communicate replacing a Flash & IRC based system.</li>
         </ul>
         <p>
-            Key Tech:<br />
-            AWS, ASP MVC, C#, JS, Dapper &amp; MS-SQL, StructureMap, TeamCity, Stripe &amp; Apple Pay
+            I joined a small new team at Gaydar tasked with migrating their legacy system based around matching users through checkboxes to a geolocated distance based design.  Performance issues with the database required it to be re-architected by just two developers including myself.  I worked closely with the designers to customize a Vue.JS chat platform based on Rocket Chat that provided real-time chat interactions for all users on the platform.  Other projects involved creating an OAuth Server and Client allowing internal systems to authorize our users transparently and provide login with Facebook for both web and iOS/Android apps.
         </p>
     </div>
-    <div>
-        <b>Antycip Simulation, Oxfordshire</b> - Systems Engineer <br />
+    <div class="cv-section">
+        <i><span class="heavy">Antycip Simulation, Oxfordshire</span> - Systems Engineer</i><br />
         June 2012 - September 2015
+        <p>
+            <b>Systems ToolKit (STK), Exata & Qualnet, C#, Java, C++, JS</b>
+        </p>
         <p>
             <a href="http://www.antycipsimulation.com">Antycip Simulation</a> is a simulation, analysis & modelling provider that develops and offers a wide range of independent platforms and services.
         </p>
@@ -78,54 +116,45 @@
             <li>Represented the technology at trade shows and when visiting customer sites to support sales team.</li>
         </ul>
         <p>
-            Key Tech:<br />
-            Systems ToolKit (STK), Exata & Qualnet, C#, Java, C++, JS
+            Joining Antycip I was tasked with learning their systems modelling platform STK; I achieved this by completing AGI’s master level certificate in 3 months instead of the expected 6.  My role kept me in direct contact with potential and existing customers and required quickly understanding their requirements and demonstrating how STK could solve them.  I lead training classes of up to 30 people at a time teaching them how to use STK across a wide range of industries.
         </p>
     </div>
-    <div>
-        <b>ttMobiles, Oxfordshire</b> - Developer <br />
+    <div class="cv-section">
+        <i><span class="heavy">ttMobiles, Oxfordshire</span> - Developer </i><br />
         September 2011 - June 2012
+        <p>
+            <b>ASP WebForms, C#, JS, MS-SQL</b>
+        </p>
         <p>
             Provider of mobile management and billing solutions.
         </p>
         <ul>
-            <li>I maintained C#/ASP.NET MVC and WebForms applications for customer and internal use.</li>
+            <li>I took ownership of internal tools and led user testing to improve usability.</li>
+            <li>
+                Implemented new features on a large ASP.NET platform.
+            </li>
         </ul>
         <p>
-            Key Tech:<br />
-            ASP WebForms, C#, MS-SQL
+            I worked in a small team of 3 developers to support and maintain a large enterprise phone bill management platform.  Learning from my Lead Developer I gained valuable knowledge of the development life cycle.  I helped to improve relations between the development team and the internal support teams by listening to their issues with the back end tools and addressing them.
         </p>
     </div>
-    <div>
-        <b>xit2, Oxfordshire</b> - Developer <br />
+    <div class="cv-section">
+        <i><span class="heavy">xit2, Oxfordshire</span> - Developer</i><br />
         May 2010 - August 2011
+        <p>
+            <b>ASP, VB6</b>
+        </p>
         <p>
             Property data network for the mortgage industry.
         </p>
         <ul>
-            <li>I worked on a Classic ASP/VB6 platform.</li>
+            <li>I quickly picked up VB6 with no prior experience becoming productive much sooner than expected.</li>
+            <li>Learned about professional software development first hand from experienced developers.</li>
         </ul>
         <p>
-            Key Tech:<br />
-            ASP, VB6
+            As a new developer with no formal training I was given the opportunity to join and pick up a new language at the same time.
         </p>
     </div>
-    <div>
-        <b>The Property Helpline, Liverpool</b> - Developer & Administrator <br />
-        2007 - 2009
-        <p>
-            Mortgage rescue and property management provider.
-        </p>
-        <ul>
-            <li>I created and maintained Front & Back office websites in ASP.NET.</li>
-            <li>Providing system administration and tech support to the company.</li>
-        </ul>
-        <p>
-            Key Tech:<br />
-            ASP WebForms, C#, PostgreSQL
-        </p>
-    </div>
-
     <h2>Education</h2>
     <p>
         <b>University of Liverpool</b> - Aerospace Engineering B.Eng<br />

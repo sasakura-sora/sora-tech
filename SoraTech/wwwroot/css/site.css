@@ -38,3 +38,10 @@
 b {
     color: #e91d63;
 }
+.heavy{
+    font-weight: bolder
+}
+
+.cv-section {
+    margin-bottom: 2em;
+}
