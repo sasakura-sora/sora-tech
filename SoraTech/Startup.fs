@@ -11,11 +11,11 @@ type Startup() =
     // This method gets called by the runtime. Use this method to add services to the container.
     // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
     member this.ConfigureServices(services: IServiceCollection) =
-        services.AddMvc() |> ignore
+        services.AddControllersWithViews().AddRazorRuntimeCompilation() |> ignore
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    member this.Configure(app: IApplicationBuilder, env: IHostingEnvironment) =
-        if env.IsDevelopment() then 
+    member this.Configure(app: IApplicationBuilder, env: IWebHostEnvironment) =
+        if env.EnvironmentName = "Development" then 
             app.UseDeveloperExceptionPage() |> ignore
 
         let options = new ForwardedHeadersOptions()
@@ -23,6 +23,9 @@ type Startup() =
         app.UseForwardedHeaders(options) |> ignore
 
         app.UseStaticFiles() |> ignore
-        app.UseMvc(fun routes -> 
-            routes.MapRoute("default", "{controller=CV}/{action=Index}") |> ignore
+
+        app.UseRouting() |> ignore
+
+        app.UseEndpoints(fun endpoints -> 
+            endpoints.MapControllerRoute("default", "{controller=CV}/{action=Index}") |> ignore
         )|> ignore
